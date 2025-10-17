@@ -1,6 +1,11 @@
 # GitHub User Info
 
-A simple web application to fetch and display GitHub user account creation date.
+## Version 2.0.0
+
+### What's New
+
+*   Added an aria-live alert to report when a lookup starts, succeeds, or fails.
+*   Improved error handling to display more informative messages to the user.
 
 ## Features
 
@@ -9,6 +14,7 @@ A simple web application to fetch and display GitHub user account creation date.
 *   Uses Bootstrap for styling and responsiveness.
 *   Handles API errors gracefully.
 *   Supports optional GitHub token via query parameter.
+*   Provides real-time feedback on lookup status via aria-live alert.
 
 ## Live Demo
 
@@ -40,7 +46,8 @@ A simple web application to fetch and display GitHub user account creation date.
 2.  Enter a GitHub username in the input field.
 3.  Click the "Get Info" button.
 4.  The account creation date will be displayed below the form.
-5. You can optionally use the `token` query parameter. Example: `https://your-github-username.github.io/github-user-info/?token=YOUR_GITHUB_TOKEN`
+5.  You can optionally use the `token` query parameter. Example: `https://your-github-username.github.io/github-user-info/?token=YOUR_GITHUB_TOKEN`
+6.  A status message will appear above the result indicating the progress of the lookup.
 
 ## Technical Stack
 
